@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Index</title>
+</head>
+<body class="login">
+<div class="logo">
+    <strong>
+        GameBox
+    </strong></div>
+<div class="box">
+    <div class="content">
+        <form class="form-vertical login-form" action="/TP3rd/login" method="post">
+            <h3 class="form-title">
+                請輸入您的帳號與密碼
+            </h3>
+            <div class="alert fade in alert-danger" style="display: none;">
+                <i class="icon-remove close" data-dismiss="alert">
+                </i>
+                請輸入任何帳號密碼做登入
+            </div>
+            <div class="form-group">
+                <div class="input-icon">
+                    <i class="icon-user">
+                    </i>
+                    <input type="text" name="id" id="id" class="form-control" placeholder="帳號"
+                           autofocus="autofocus" data-rule-required="true" data-msg-required="請輸入帳號。"
+                    />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-icon">
+                    <i class="icon-lock">
+                    </i>
+                    <input type="password" name="password" id="password" class="form-control" placeholder="密碼"
+                           data-rule-required="true" data-msg-required="請輸入密碼。"
+                    />
+                </div>
+            </div>
+            <div class="form-actions">
+                <button type="button" class="submit btn btn-primary pull-right" onclick="location.href='/register.html'">
+                    註冊
+                    <i class="icon-angle-right">
+                    </i>
+                </button>
+                <button type="submit" class="submit btn btn-primary pull-right" >
+                    登入
+                    <i class="icon-angle-right">
+                    </i>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

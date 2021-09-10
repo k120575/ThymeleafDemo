@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GameBox</title>
+</head>
+<body class="login-img3-body">
+
+<div class="container">
+
+    <form class="login-form" id="addMember" name="addMember" action="/addMember" onkeydown="if(event.keyCode==13)return false;">
+        <div class="login-wrap">
+
+<!--            <div class="input-group">-->
+<!--                <span class="input-group-addon"><i class="icon_profile"></i></span>-->
+<!--                <input type="text" name="cname" id="cname" class="form-control" placeholder="中文名稱"-->
+<!--                       autofocus="autofocus" data-rule-required="true" data-msg-required="請輸入中文名稱"/>-->
+<!--            </div>-->
+
+            <div class="input-group">
+                <span class="input-group-addon"><i class="icon_profile"></i></span>
+                <input type="text" name="name" id="name" class="form-control" placeholder="登入帳號"
+                       autofocus="autofocus" data-rule-required="true" data-msg-required="請輸入欲設定帳號"/>
+            </div>
+
+            <div class="input-group">
+                <span class="input-group-addon"><i class="icon_key_alt"></i></span>
+                <input type="password" name="password" id="password" class="form-control" placeholder="請輸入密碼"
+                       data-rule-required="true" />
+            </div>
+
+            <div class="input-group">
+                <span class="input-group-addon"><i class="icon_key_alt"></i></span>
+                <input type="password" name="password2" id="password2" class="form-control" placeholder="請再次輸入密碼"
+                       data-rule-required="true" />
+            </div>
+
+<!--            <div class="input-group">-->
+<!--                <span class="input-group-addon"><i class="icon_profile"></i></span>-->
+<!--                <select name="level" id="level" class="form-control">-->
+<!--                    <option value="1">工程師</option>-->
+<!--                    <option value="2">測試員</option>-->
+<!--                </select>-->
+<!--            </div>-->
+            <!--<div id="hint"></div>-->
+            <button class="btn btn-primary btn-lg btn-block" type="button"  onclick="check();">註冊</button>
+        </div>
+    </form>
+    <script type="text/javascript" src="/TP3rd/jquery-1.8.0.js"></script>
+    <script language="JavaScript" type="text/javascript">
+        $(document).ready(function(){
+
+        });
+
+        function check(){
+            var password = $("#password").val();
+            var password2 = $("#password2").val();
+
+            // if($("#cname").val() == ""){
+            //     alert("中文名稱必須輸入");
+            //     $("#cname").focus();
+            //     return;
+            // }
+
+            if(password != password2){
+                alert("兩次輸入的密碼不同喔!!!");
+                // $("#hint").text("兩次輸入的密碼不同喔!!!");
+                return;
+            }
+            $("#addMember").submit();
+
+        }
+    </script>
+</div>
+</body>
+</html>
