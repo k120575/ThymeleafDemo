@@ -20,8 +20,8 @@ public class MemberServiceImpl implements MemberService {
     }
 
     @Override
-    public void addMember(String name, String password) {
-        Member member = new Member(name, password);
+    public void addMember(String name, String password, String password2) {
+        Member member = new Member(name, password, password2);
         memberRepo.saveAndFlush(member);
     }
 

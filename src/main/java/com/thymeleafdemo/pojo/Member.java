@@ -10,9 +10,10 @@ import java.time.LocalDateTime;
 @Table(name = "memeber")
 public class Member {
 
-    public Member(String name, String password){
+    public Member(String name, String password, String password2){
         this.name = name;
         this.password = password;
+        this.password2 = password2;
     }
 
     @Id
